@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Recipes</title>
     <!-- style  -->
-    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- start of body  -->
-    <nav class="nav row aling-center">
-      <div class="container row">
-        <img class="logo" src="../../../images/logo-js.png" alt="Logo js" />
-      </div>
-    </nav>
-
     <main>
-      <section class="container-xl">
+      <section class="container">
         <!-- title  -->
-        <h1 class="justify-center">Le nostre ricette</h1>
-
+        <h2 class="title">Le nostre ricette</h2>
+        <div class="underline"></div>
+        <div class="spacer-xxs"></div>
         <!-- recipe  -->
-        <article class="container paper justify-center">
+        <article class="container paper">
           <div class="img-container">
-            <img src="" alt="" />
+            <img src="./img/cookies.jpg" id="recipe-img" alt="" />
           </div>
-          <h3 class="justify-center" id="name">Cookies</h3>
-          <p id="difficulty">5/10</p>
+          <h3 id="name">Cookies</h3>
+          <p id="difficulty">Difficulty: 5/10</p>
           <p id="recipe">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
             soluta ipsa eos corporis. Ducimus quam deserunt obcaecati adipisci
@@ -36,17 +36,19 @@
             Molestias magni quam eaque.
           </p>
 
+          <div class="spacer-xs"></div>
           <!-- prev next buttons-->
           <div class="button-container">
-            <button class="previous-btn">
+            <button class="button-xs before-btn">
               <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="next-btn">
+            <button class="button-xs next-btn">
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
+          <div class="spacer-xxs"></div>
           <!-- random button -->
-          <button class="random-btn">surprise me</button>
+          <button class="button-xs random-btn">random recipe</button>
         </article>
       </section>
     </main>
