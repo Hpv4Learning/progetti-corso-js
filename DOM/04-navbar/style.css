@@ -225,15 +225,15 @@ nav {
   .nav-toggle {
     display: none;
   }
-  .links {
+  .nav-links {
     height: auto;
     display: flex;
   }
-  .links a {
+  .nav-links a {
     padding: 0;
     margin: 0 0.5rem;
   }
-  .links a:hover {
+  .nav-links a:hover {
     padding: 0;
     background: transparent;
   }
