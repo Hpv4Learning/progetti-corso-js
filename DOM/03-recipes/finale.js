@@ -1,3 +1,4 @@
+// array di oggetti. ogni oggetto rappresenta una ricetta
 const recipes = [
   {
     nome: "cookies",
@@ -45,21 +46,20 @@ const recipes = [
   },
 ];
 
-//DOM nodes
+// selezioniamo i nodi dal DOM
 const nome = document.getElementById("nome");
 const diff = document.getElementById("difficulty");
 const recipe = document.getElementById("recipe");
 const img = document.getElementById("recipe-img");
 
-// button nodes
 const nextButton = document.querySelector(".next-btn");
 const prevButton = document.querySelector(".before-btn");
 const randomButton = document.querySelector(".random-btn");
 
-// set first item to show
+// settimo il primo item da mostrare
 let currentItem = 0;
 
-// load (DOMContentLoaded) first item
+// carichiamo con DOMContentLoaded il primo item
 window.addEventListener("DOMContentLoaded", function () {
   const item = recipes[currentItem];
   img.src = item.image;
@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", function () {
   recipe.textContent = item.recipe;
 });
 
-// function that shows the person based on item index
+// funzione che mostra la ricetta in base all'indice
 function showRecipe(index) {
   const item = recipes[index];
   img.src = item.image;
@@ -77,7 +77,8 @@ function showRecipe(index) {
   recipe.textContent = item.recipe;
 }
 
-// adding showRecipe function to the buttons
+// aggiungiamo la funzione showRecipe ai bottoni
+
 // prevButton
 prevButton.addEventListener("click", function () {
   currentItem--;
