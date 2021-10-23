@@ -15,17 +15,22 @@
   </head>
   <body>
     <!-- start of body  -->
+    <!-- start nav -->
     <nav class="nav row justify-center">
       <img src="./logo-js.png" class="logo" alt="logo" />
       <h1>SPORT CENTER</h1>
     </nav>
+    <!-- end nav -->
 
+    <!-- start main -->
     <main>
         <section class="questions">
+
         <!-- title -->
         <div class="title">
           <h2>FAQ</h2>
         </div>
+
         <!-- questions -->
         <div class="section-center">
           <!-- first question -->
@@ -35,11 +40,11 @@
               <p>Quanto costa affittare un campo?</p>
               <!-- buttons -->
               <button type="button" class="question-btn">
-                <span class="plus-icon">
-                  <i class="far fa-plus-square"></i>
+                <span class="open">
+                  <i class="fas fa-plus-circle"></i>
                 </span>
-                <span class="minus-icon">
-                  <i class="far fa-minus-square"></i>
+                <span class="close">
+                  <i class="fas fa-minus-circle"></i>
                 </span>
               </button>
             </div>
@@ -61,11 +66,11 @@
               <p>Si possono organizzare tornei?</p>
               <!-- buttons -->
               <button type="button" class="question-btn">
-                <span class="plus-icon">
-                  <i class="far fa-plus-square"></i>
+                <span class="open">
+                  <i class="fas fa-plus-circle"></i>
                 </span>
-                <span class="minus-icon">
-                  <i class="far fa-minus-square"></i>
+                <span class="close">
+                  <i class="fas fa-minus-circle"></i>
                 </span>
               </button>
             </div>
@@ -86,11 +91,11 @@
             <div class="question-text">
               <p>Quali sono gli orari di apertura?</p>
               <!-- buttons -->
-              <button class="question-btn modal-btn">
-                  <i class="far fa-plus-square"></i>
+              <button class="question-btn open-modal-btn">
+                  <i class="fas fa-plus-circle"></i>
               </button>
             </div>
-            <!-- answer -->
+            <!-- answer modal -->
             <div class="modal-overlay">
                 <div class="modal-container">
                     <h3>Orari di apertura:</h3>
@@ -106,11 +111,11 @@
           </article>
           <!-- end of third question -->
 
-
       </section>
     </main>
+    <!-- end main -->
 
     <!-- script  -->
-    <script src="finale.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

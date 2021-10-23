@@ -268,6 +268,8 @@ input {
   font-weight: 600;
 }
 
+/* -------------------------------FAQ------------------------------- */
+
 .title {
   margin-top: 20vh;
   margin-bottom: 4rem;
@@ -321,24 +323,22 @@ input {
   display: block;
 }
 
-.plus-icon {
+.open {
   color: var(--optional);
 }
-.minus-icon {
+.close {
   color: var(--red);
   display: none;
 }
-.show-text .minus-icon {
+.show-text .close {
   display: inline;
 }
-.show-text .plus-icon {
+.show-text .open {
   display: none;
 }
-/* -------------------------------------- */
+/* ------------------------------------MODAL------------------------------------------ */
 
-.modal-btn {
-  background: var(--clr-primary-5);
-  border-color: var(--clr-primary-5);
+.open-modal-btn {
   color: var(--optional);
 }
 
@@ -356,7 +356,7 @@ input {
   z-index: -10;
 }
 /* OPEN/CLOSE MODAL */
-.open-modal {
+.show-modal {
   visibility: visible;
   z-index: 10;
 }

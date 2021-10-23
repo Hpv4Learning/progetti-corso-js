@@ -1,43 +1,24 @@
-//using selectors inside the element
-const questions = document.querySelectorAll(".question");
+//------------------FAQ------------------------------------------
 
-questions.forEach(function (question) {
-  const btn = question.querySelector(".question-btn");
-  // console.log(btn);
+const buttons = document.querySelectorAll(".question-btn");
 
-  btn.addEventListener("click", function () {
-    // console.log(question);
-
-    questions.forEach(function (item) {
-      if (item !== question) {
-        item.classList.remove("show-text");
-      }
-    });
+buttons.forEach(function (button) {
+  button.addEventListener("click", function (e) {
+    const question = e.currentTarget.parentElement.parentElement;
 
     question.classList.toggle("show-text");
   });
 });
 
-// traversing the dom
-// const btns = document.querySelectorAll(".question-btn");
+// -----------------------MODAL----------------------------------
 
-// btns.forEach(function (btn) {
-//   btn.addEventListener("click", function (e) {
-//     const question = e.currentTarget.parentElement.parentElement;
-
-//     question.classList.toggle("show-text");
-//   });
-// });
-
-// --------------------------------------------------------------
-
-const modalBtn = document.querySelector(".modal-btn");
+const modalBtn = document.querySelector(".open-modal-btn");
 const modal = document.querySelector(".modal-overlay");
 const closeBtn = document.querySelector(".close-btn");
 
 modalBtn.addEventListener("click", function () {
-  modal.classList.add("open-modal");
+  modal.classList.add("show-modal");
 });
 closeBtn.addEventListener("click", function () {
-  modal.classList.remove("open-modal");
+  modal.classList.remove("show-modal");
 });
