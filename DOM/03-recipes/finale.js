@@ -60,13 +60,7 @@ const randomButton = document.querySelector(".random-btn");
 let currentItem = 0;
 
 // carichiamo con DOMContentLoaded il primo item
-window.addEventListener("DOMContentLoaded", function () {
-  const item = recipes[currentItem];
-  img.src = item.image;
-  nome.textContent = item.nome;
-  diff.textContent = item.difficulty;
-  recipe.textContent = item.recipe;
-});
+window.addEventListener("DOMContentLoaded", showRecipe(currentItem));
 
 // funzione che mostra la ricetta in base all'indice
 function showRecipe(index) {
