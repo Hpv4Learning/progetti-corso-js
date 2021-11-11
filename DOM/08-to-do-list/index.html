@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start of body  -->
+
+    <!-- start main -->
+    <main>
+      <section class="section-center">
+        <!-- form -->
+        <form class="to-do-form">
+          <p class="error"></p>
+          <h3>my to do list</h3>
+          <div class="underline"></div>
+          <div class="form-control">
+            <input type="text" id="to-do" placeholder="es. lavare i piatti" />
+            <button type="submit" class="submit-btn">submit</button>
+          </div>
+        </form>
+        <!-- list -->
+        <div class="to-do-container">
+          <div class="to-do-list">
+            <!-- <article class="to-do-item">
+              <p class="title">${value}</p>
+              <div class="btn-container"> -->
+            <!-- edit btn -->
+            <!-- <button type="button" class="edit-btn">
+                  <i class="fas fa-edit"></i>
+                </button> -->
+            <!-- delete btn -->
+            <!-- <button type="button" class="delete-btn">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </article> -->
+          </div>
+          <button class="clear-btn">clear items</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- script -->
+    <script src="finale.js"></script>
+  </body>
+</html>
