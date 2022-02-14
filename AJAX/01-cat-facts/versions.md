@@ -1,26 +1,26 @@
 # xhr
 
-const btn = document.querySelector('.btn');
-const content = document.querySelector('.content');
+const btn = document.querySelector('.btn'); 1
+const content = document.querySelector('.content'); 2
 const URL = 'https://api.chucknorris.io/jokes/random';
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', () => { 3
 getData(URL);
 });
 
-function getData(url) {
-const xhr = new XMLHttpRequest();
-xhr.open('GET', url);
-xhr.send();
-xhr.onreadystatechange = function () {
-if (xhr.readyState !== 4) return;
-if (xhr.status === 200) {
-const { value: joke } = JSON.parse(xhr.responseText);
-content.textContent = joke;
+function getData(url) { 4
+const xhr = new XMLHttpRequest(); 5
+xhr.open('GET', url); 6
+xhr.send(); 7
+xhr.onreadystatechange = function () { 8
+if (xhr.readyState !== 4) return; 9
+if (xhr.status === 200) { 10
+const { value: fact } = JSON.parse(xhr.responseText); 10
+content.textContent = fact; 11
 } else {
-console.log({
-status: xhr.status,
-text: xhr.statusText,
+console.log({ 12
+status: xhr.status, 12
+text: xhr.statusText, 12
 });
 }
 };
@@ -30,7 +30,6 @@ text: xhr.statusText,
 
 const btn = document.querySelector('.btn');
 const content = document.querySelector('.content');
-const img = document.querySelector('.container img');
 const URL = 'https://api.chucknorris.io/jokes/random';
 
 btn.addEventListener('click', () => {
@@ -40,7 +39,7 @@ getData(URL)
 });
 
 function getData(url) {
-return new Promise((resolve, reject) => {
+return new Promise((resolve, reject) => { 1
 const xhr = new XMLHttpRequest();
 xhr.open('GET', url);
 xhr.send();
@@ -59,13 +58,8 @@ text: xhr.statusText,
 }
 
 function displayData(data) {
-img.classList.add('shake-img');
 const { value: joke } = JSON.parse(data);
 content.textContent = joke;
-const random = Math.random() \* 1000;
-setTimeout(() => {
-img.classList.remove('shake-img');
-}, random);
 }
 
 # fetch

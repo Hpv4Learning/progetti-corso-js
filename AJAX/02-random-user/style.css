@@ -311,9 +311,9 @@ input {
   margin-bottom: 1rem;
 }
 .values-list {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
 .icon {
