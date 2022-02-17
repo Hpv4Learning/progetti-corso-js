@@ -11,8 +11,8 @@ const displayUser = (person) => {
   value.textContent = person.name;
   title.textContent = `My name is`;
   removeActive(btns);
-  btns[0].classList.remove("active");
-  btns.forEach((btn) => {
+  btns[0].classList.add("active");
+  btns.map((btn) => {
     const label = btn.dataset.label;
     btn.addEventListener("click", () => {
       title.textContent = `My ${label} is`;
