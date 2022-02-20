@@ -11,11 +11,11 @@ let count = 0;
 function changeMod() {
   if (count === 0) {
     document.body.style.backgroundColor = "var(--background-color)";
-    title.style.color = "var(--extra-dark-grey)";
+    title.style.color = "var(--extra-dark-gray)";
     btn.style.backgroundColor = "var(--optional)";
     count++;
   } else {
-    document.body.style.backgroundColor = "var(--extra-dark-grey)";
+    document.body.style.backgroundColor = "var(--extra-dark-gray)";
     title.style.color = "var(--background-color)";
     btn.style.backgroundColor = "var(--primary)";
     btn.style.color = "var(--tertiary)";
