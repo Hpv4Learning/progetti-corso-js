@@ -375,6 +375,7 @@ input {
   font-family: monospace;
   font-size: 2rem;
   border-radius: var(--radius);
+  max-width: 70%;
 }
 
 /* single cocktail */
