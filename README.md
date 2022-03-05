@@ -27,7 +27,7 @@ In questa sezione andremo a realizzare diversi progetti per imparare a padronegg
 
 ## 2 - AJAX
 
-Lavoriamo um po' sulle chiamate API e sulla gestione di esse.
+Lavoriamo un po' sulle chiamate API e sulla gestione di esse.
 
 1. Cat Facts: https://corso-js-cat-facts.netlify.app
 2. Random User: https://corso-js-random-user.netlify.app
