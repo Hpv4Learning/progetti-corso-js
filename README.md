@@ -16,19 +16,19 @@ https://hpv4learning.it/corso-react-hook-teoria-progetti/
 
 In questa sezione andremo a realizzare diversi progetti per imparare a padroneggiare i concetti fondamentali del DOM.
 
-1. Counter
-2. Darkmode
-3. Recipes
-4. Navbar
-5. Sidebar
-6. Faq
-7. Sport Center
-8. To Do List
+1. Counter: https://corso-js-counter.netlify.app
+2. Darkmode: https://corso-js-darkmode.netlify.app
+3. Recipes: https://corso-js-recipes.netlify.app
+4. Navbar: https://corso-js-navbar.netlify.app
+5. Sidebar: https://corso-js-sidebar.netlify.app
+6. Faq: https://corso-js-faq.netlify.app
+7. Sport Center: https://corso-js-sport-center.netlify.app
+8. To Do List: https://corso-js-to-do-list.netlify.app
 
 ## 2 - AJAX
 
-Lavoriamo um po' sulle chiamate API e sulla gestione di esse.
+Lavoriamo un po' sulle chiamate API e sulla gestione di esse.
 
-1. Cat Facts
-2. Random User
-3. Cocktails
+1. Cat Facts: https://corso-js-cat-facts.netlify.app
+2. Random User: https://corso-js-random-user.netlify.app
+3. Cocktails: https://corso-js-cocktails.netlify.app
