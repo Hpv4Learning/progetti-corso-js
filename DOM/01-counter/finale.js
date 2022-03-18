@@ -9,6 +9,7 @@ console.log(buttons);
 
 buttons.forEach(function (button) {
   button.addEventListener("click", function (e) {
+    // console.log(e.currentTarget.classList);
     const style = e.currentTarget.classList;
     if (style.contains("minus")) {
       counter--;

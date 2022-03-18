@@ -1,5 +1,5 @@
-import { hideLoading } from './toggleLoading.js';
-import get from './getElement.js';
+import { hideLoading } from "./toggleLoading.js";
+import get from "./getElement.js";
 
 const displayDrink = (data) => {
   hideLoading();
@@ -13,10 +13,10 @@ const displayDrink = (data) => {
     drink.strIngredient4,
     drink.strIngredient5,
   ];
-  const img = get('.drink-img');
-  const drinkName = get('.drink-name');
-  const description = get('.drink-desc');
-  const ingredients = get('.drink-ingredients');
+  const img = get(".drink-img");
+  const drinkName = get(".drink-name");
+  const description = get(".drink-desc");
+  const ingredients = get(".drink-ingredients");
   img.src = image;
   document.title = name;
   drinkName.textContent = name;
@@ -26,6 +26,6 @@ const displayDrink = (data) => {
       if (!item) return;
       return `<li><i class="far fa-check-square"></i>${item}</li>`;
     })
-    .join('');
+    .join("");
 };
 export default displayDrink;
