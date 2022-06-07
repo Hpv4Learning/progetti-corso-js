@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petru Store | Product</title>
+    <!-- style  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/products.css" />
+  </head>
+  <body>
+    <main>
+      <section id="first-section">
+        <nav>
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <button class="nav-toggle">
+                <img src="./images/dropdown-menu.svg" alt="dropdown menu" />
+              </button>
+              <a href="./index.html">
+                <h1>Petru Store</h1>
+              </a>
+              <div class="toggle-container">
+                <button class="toggle-cart-mobile open-modal-btn">
+                  <img src="./images/cart.svg" alt="dropdown menu" />
+                  <span class="cart-item-count-mobile"></span>
+                </button>
+              </div>
+            </div>
+            <!-- nav links -->
+            <ul class="nav-links">
+              <li>
+                <a href="./products.html">Products</a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <button class="toggle-cart-desktop open-modal-btn">
+                  <img src="./images/cart.svg" alt="dropdown menu" />
+                  <span class="cart-item-count-desktop"></span>
+                </button>
+              </li>
+            </ul>
+            <!-- cart -->
+            <div class="modal-container">
+              <div class="cart-header">
+                <h3>Carrello</h3>
+                <button class="close-modal">
+                  <img src="./images/back-arrow.svg" alt="back arrow" />
+                </button>
+              </div>
+              <div class="items-container">
+                <!-- <article class="item" data-id="">
+                  <img src="" alt="item" />
+                  <div class="info">
+                    <h4></h4>
+                    <p class="cart-item-amount" data-id=""></p>
+                    <div class="item-button-container">
+                      <button class="plus" data-id="">
+                        <img src="./images/plus.svg" alt="plus" />
+                      </button>
+                      <button class="minus" data-id="">
+                        <img src="./images/minus.svg" alt="minus" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="price cart-item-price"></div>
+                </article> -->
+              </div>
+              <div class="buttons-container">
+                <div class="cart-total"></div>
+                <button id="checkout">Vai al checkout</button>
+                <button id="clean-cart">Svuota il carrello</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- modal overlay -->
+        <div class="modal-overlay"></div>
+
+        <section class="product">
+          <div class="product-info">
+            <h1 class="product-name">Nome Prodotto</h1>
+            <p class="product-description">
+              I'm baby wayfarers helvetica yr flannel waistcoat enamel pin
+              yuccie small batch lumbersexual kombucha shabby chic.
+            </p>
+            <button class="add-cart-btn">Add to cart</button>
+            <div class="product-table">
+              <p class="label yellow">Categoria</p>
+              <p class="value yellow product-category"></p>
+              <p class="label">Prezzo</p>
+              <p class="value product-price"></p>
+              <p class="label">Disponibili</p>
+              <p class="product-disponibility label"></p>
+              <p class="label">Voto</p>
+              <div class="value yellow product-rating">
+                <!-- <span class="iconify star"
+                  ><img src="./images/star.svg" alt="star"
+                /></span> -->
+              </div>
+            </div>
+          </div>
+
+          <img src="" alt="product" class="product-img" />
+        </section>
+      </section>
+      <footer>
+        <hr />
+        <p>All right reserved to Petru & Co</p>
+      </footer>
+    </main>
+    <!-- loading -->
+    <div class="page-loading">
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div class="loader loader-inner"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script type="module" src="./src/pages/product.js"></script>
+  </body>
+</html>

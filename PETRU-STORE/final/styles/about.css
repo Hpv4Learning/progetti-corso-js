@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --extra-light-gray: #f8f9faff;
+  --background-color: #fcfaff;
+  --soft-light-gray: #f2f2f3;
+  --light-gray: #ced4daff;
+  --primary-gray: #adb5bdff;
+  --soft-dark-gray: #89949e;
+  --paper-bg: rgb(67, 69, 71);
+  --dark-paper-bg: rgb(65, 65, 65);
+  --dark-gray: #343a40;
+  --paragraph-spacing: 0.00938em;
+  --extra-dark-gray: #121212;
+  --paragraph-color: rgba(0, 0, 0, 0.54);
+  --primary: #8769fe;
+  --secondary: #a435f0;
+  --tertiary: #f3dffb;
+  --cta: #e4dc12;
+  /* Global */
+  --letter-spacing: 0.08rem;
+  --transition: all 0.2s ease;
+  --btn-transition: all 0.125s ease;
+  --radius: 0.25rem;
+  --img-radius: 0.25rem 0.25rem 0rem 0rem;
+  --card-radius: 0rem 0rem 0.25rem 0.25rem;
+  --btn-radius: 100px;
+  --light-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+}
+
+/*  ABOUT US ----------------------------------------------- */
+.about-us {
+  width: 100%;
+  border: 1px solid var(--dark-gray);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 20px 24px;
+  margin-top: 60px;
+}
+
+.about-us h1 {
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.about-us p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.about-us button {
+  width: 170px;
+  height: 36px;
+  background-color: var(--dark-gray);
+  color: var(--cta);
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 8px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-links li:nth-child(2) {
+    border-bottom: 1px solid var(--cta);
+    margin-top: 15px;
+    height: 30px;
+  }
+
+  .about-us {
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* margin-top: 60px; */
+  }
+
+  .about-us h1 {
+    color: white;
+    font-size: 96px;
+    font-weight: 700;
+  }
+
+  .about-us p {
+    color: white;
+    width: 70%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+
+  .about-us button {
+    width: 204px;
+    height: 48px;
+    background-color: var(--dark-gray);
+    color: var(--cta);
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 8px;
+    border-color: transparent;
+    margin-bottom: 110px;
+  }
+}
